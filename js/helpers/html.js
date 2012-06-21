@@ -279,7 +279,7 @@ html.generateSidebarHTML = function() {
 html.generateDeletePromptHTML = function() {
     var html_code = '<div id="task-delete-radios" class="radios">' +
        		'<p><b>' + wunderlist.language.data.delete_task_prompt + '</b></p>' +
-			'<p><input id="task_delete_1" type="radio" name="taskDelete" value="1" /> <span>' + wunderlist.language.data.yes + '</span> &nbsp; &nbsp; &nbsp; <input id="task_delete_0" type="radio" name="taskDelete" value="0" /> <span>' + wunderlist.language.data.no + '</span></p>' +
+			'<p><input id="task_delete_1" type="radio" name="taskDelete" value="1" /> <label for="task_delete_1"><span>' + wunderlist.language.data.yes + '</label></span> &nbsp; &nbsp; &nbsp; <input id="task_delete_0" type="radio" name="taskDelete" value="0" /> <label for="task_delete_0"><span>' + wunderlist.language.data.no + '</label></span></p>' +
  			'</div>' +
     		'<p class="clearfix"><input id="cancel-settings" class="input-button" type="submit" value="'+ wunderlist.language.data.cancel +'" /> <input id="confirm-settings" class="input-button" type="submit" value="'+ wunderlist.language.data.save_changes +'" /></p></div>';
     		
