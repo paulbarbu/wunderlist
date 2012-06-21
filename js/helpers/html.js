@@ -308,14 +308,14 @@ html.generateAddItemMethodHTML = function() {
  */
 html.generateSwitchDateFormatHTML = function() {
 	var html_code =  '<div id="date-format-radios" class="radios"><p><input type="radio" id="date_de" name="switchDate" value="de"> <span>dd.mm.YYYY</span></p>' +
-    		'<p><input type="radio" id="date_us" name="switchDate" value="us"> <span>mm/dd/YYYY</span></p>' +
-       		'<p><input type="radio" id="date_en" name="switchDate" value="en"> <span>dd/mm/YYYY</span></p>' +
-       		'<p><input type="radio" id="date_iso" name="switchDate" value="iso"> <span>YYYY/mm/dd</span></p></div>' +
+    		'<p><input type="radio" id="date_us" name="switchDate" value="us"> <label for="date_us"><span>mm/dd/YYYY</span></label></p>' +
+       		'<p><input type="radio" id="date_en" name="switchDate" value="en"> <label for="date_en"><span>dd/mm/YYYY</span></label></p>' +
+       		'<p><input type="radio" id="date_iso" name="switchDate" value="iso"> <label for="date_iso"><span>YYYY/mm/dd</span></label></p></div>' +
        		'<div id="week-start-day-radios" class="radios">' +
        		'<span class="custom-dialog-headline">' + wunderlist.language.data.startday + '</span>' +
-			'<p><input id="startday_1" type="radio" name="startDay" value="1" /> <span>' + wunderlist.language.data.monday + '</span></p>' +
-			'<p><input id="startday_6" type="radio" name="startDay" value="6" /> <span>' + wunderlist.language.data.saturday + '</span></p>' +
-			'<p><input id="startday_0" type="radio" name="startDay" value="0" /> <span>' + wunderlist.language.data.sunday + '</span></p>' +
+			'<p><input id="startday_1" type="radio" name="startDay" value="1" /> <label for="startday_1"><span>' + wunderlist.language.data.monday + '</span></label></p>' +
+			'<p><input id="startday_6" type="radio" name="startDay" value="6" /> <label for="startday_6"><span>' + wunderlist.language.data.saturday + '</span></label></p>' +
+			'<p><input id="startday_0" type="radio" name="startDay" value="0" /> <label for="startday_0"><span>' + wunderlist.language.data.sunday + '</span></label></p>' +
  			'</div>' +
     		'<p class="clearfix"><input id="cancel-dateformat" class="input-button" type="submit" value="'+ wunderlist.language.data.cancel +'" /> <input id="confirm-dateformat" class="input-button" type="submit" value="'+ wunderlist.language.data.save_changes +'" /></p>';
 	return html_code;
