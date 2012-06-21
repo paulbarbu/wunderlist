@@ -264,7 +264,7 @@ html.generateBackgroundsDialogHTML = function() {
 html.generateSidebarHTML = function() {
     var html_code = '<div id="sidebar-position-radios" class="radios">' +
 			'<p><b>' + wunderlist.language.data.sidebar_position_text + '</b></p>' +
-			'<p><label><input id="sidebar_position_1" type="radio" name="sidebarPosition" value="1" /> <span>' + wunderlist.language.data.left + '</span></label> &nbsp; &nbsp; &nbsp; <label><input id="sidebar_position_0" type="radio" name="sidebarPosition" value="0" /> <span>' + wunderlist.language.data.right + '</span></label></p>' +
+			'<p><input id="sidebar_position_1" type="radio" name="sidebarPosition" value="1" /> <label for="sidebar_position_1"><span>' + wunderlist.language.data.left + '</label></span> &nbsp; &nbsp; &nbsp; <input id="sidebar_position_0" type="radio" name="sidebarPosition" value="0" /> <label for="sidebar_position_0"><span>' + wunderlist.language.data.right + '</label></span></p>' +
  			'</div>' +
     		'<p class="clearfix"><input id="cancel-settings" class="input-button" type="submit" value="'+ wunderlist.language.data.cancel +'" /> <input id="confirm-settings" class="input-button" type="submit" value="'+ wunderlist.language.data.save_changes +'" /></p></div>';
     		
